@@ -1,10 +1,10 @@
-def my_collect(collection)
+def my_collect(placeholder)
   i = 0
-  while i < collection.length
-    yield(collection[i])
+  while i < placeholder.length
+    yield(placeholder[i])
     i += 1
   end
-  collection
+  placeholder
 end
 
 array = []
