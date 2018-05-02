@@ -1,10 +1,11 @@
 def my_collect(placeholder)
   i = 0
+  return_value = []
   while i < placeholder.length
-    placeholder << yield(placeholder[i])
+    return_value << yield(placeholder[i])
     i += 1
   end
-  placeholder
+  return_value
 end
 
 array = []
