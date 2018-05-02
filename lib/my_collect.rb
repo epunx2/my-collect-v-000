@@ -1,7 +1,7 @@
 def my_collect(placeholder)
   i = 0
   while i < placeholder.length
-    yield(placeholder[i])
+    placeholder << yield(placeholder[i])
     i += 1
   end
   placeholder
